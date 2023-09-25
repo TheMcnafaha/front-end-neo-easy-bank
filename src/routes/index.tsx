@@ -1,14 +1,19 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
+  const isMobileNavbarOpen = useSignal(false);
   return (
-    <>
+    <div class="grid grid-cols-1">
       <header class="text-center text-tp-darkBlue">
         <nav class="border-gray-200 bg-white dark:bg-gray-900">
           <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
             <a href="/" class="flex items-center">
-              <img src="/fe/logo.svg" class="mr-3 " alt="Easybank Logo " />
+              <img
+                src="/fe/logo.svg"
+                class="mr-3 "
+                alt="Easybank <Lo:w></Lo:w> "
+              />
             </a>
             <button
               data-collapse-toggle="navbar-default"
@@ -18,24 +23,17 @@ export default component$(() => {
               aria-expanded="false"
             >
               <span class="sr-only">Open main menu</span>
-              <svg
-                class="h-5 w-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
+              <img
+                onFocusout$={() => {
+                  console.log("fadsfdsaf");
+                }}
+                src="/fe/icon-hamburger.svg"
+                class="text-xs"
+                alt="menu icon"
+              />
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-              <ul class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50  font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900">
+              <ul class="mt-4 max-w-sm my-0 mx-auto flex flex-col rounded-lg border border-gray-100 bg-gray-50  font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900">
                 <li>
                   <a
                     href="#"
@@ -83,13 +81,16 @@ export default component$(() => {
         </nav>
       </header>
       <main></main>
-      <h1>Hi 👋</h1>
+      <div class="px-4 bg-blue-200">
+        <h1>Hi 👋</h1>
+        <p>{`${isMobileNavbarOpen.value}`}</p>
+      </div>
       <p>
         Can't wait to see what you build with qwik!
         <br />
         Happy coding.
       </p>
-    </>
+    </div>
   );
 });
 
