@@ -1,0 +1,16 @@
+import { component$ } from "@builder.io/qwik";
+
+export interface ButtonProps {
+  text: string;
+}
+
+export const Button = component$<ButtonProps>(({ text }) => {
+  return (
+    <button
+      class="rounded-2xl bg-gradient-to-r from-tp-limeGreen to-tp-brightCyan px-5 py-2  text-xs font-bold text-white w-fit"
+      type="button"
+    >
+      {text}
+    </button>
+  );
+});

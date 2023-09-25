@@ -1,5 +1,6 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { Button } from "~/components/Button/button";
 
 export default component$(() => {
   const isMobileNavbarOpen = useSignal(false);
@@ -32,7 +33,7 @@ export default component$(() => {
                 alt="menu icon"
               />
             </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <div class="hidden w-full md:block md:w-auto " id="navbar-default">
               <ul class="mt-4 max-w-sm my-0 mx-auto flex flex-col rounded-lg border border-gray-100 bg-gray-50  font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900">
                 <li>
                   <a
@@ -77,6 +78,9 @@ export default component$(() => {
                 </li>
               </ul>
             </div>
+            <div class="hidden lg:block">
+              <Button text="Request Invite"></Button>
+            </div>
           </div>
         </nav>
       </header>
@@ -85,6 +89,7 @@ export default component$(() => {
         <h1>Hi 👋</h1>
         <p>{`${isMobileNavbarOpen.value}`}</p>
       </div>
+      <Button text="test123"></Button>
       <p>
         Can't wait to see what you build with qwik!
         <br />
