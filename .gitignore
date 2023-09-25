@@ -40,5 +40,8 @@ lerna-debug.log*
 .yarn/*
 !.yarn/releases
 
+# pnpm
+pnpm-lock.yaml
+
 # bun bin
 bun.lockb
