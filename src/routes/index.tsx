@@ -7,7 +7,7 @@ export default component$(() => {
   return (
     <div class="grid grid-cols-1">
       <header class="text-center text-tp-darkBlue">
-        <nav class="border-gray-200 bg-white dark:bg-gray-900">
+        <nav class="border-gray-200 z-10 bg-white dark:bg-gray-900">
           <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
             <a href="/" class="flex items-center">
               <img
@@ -84,7 +84,27 @@ export default component$(() => {
           </div>
         </nav>
       </header>
-      <main></main>
+      <main>
+        <picture class="bg-[url('fe/bg-intro-mobile.svg')]"></picture>
+        <div class="bg-[url('/fe/bg-intro-mobile.svg')] overflow-hidden  bg-cover">
+          <img
+            class="relative bottom-20 "
+            src="  fe/image-mockups.png "
+            alt=""
+          />
+        </div>
+        <section class=" px-4 grid grid-rows-1">
+          <div class="relative bottom-20">
+            <h2 class="">Next generation digital banking</h2>
+            <p class="">
+              Take your financial life online. Your Easybank account will be a
+              one-stop-shop for spending, saving, budgeting, investing, and much
+              more.
+            </p>
+            <Button text="Request Invite"></Button>
+          </div>
+        </section>
+      </main>
       <div class="px-4 bg-blue-200">
         <h1>Hi 👋</h1>
         <p>{`${isMobileNavbarOpen.value}`}</p>
