@@ -86,7 +86,7 @@ export default component$(() => {
         </nav>
       </header>
       <main>
-        <section class=" grid grid-cols-1  justify-items-center relative bottom-20 -z-20">
+        <section class=" relative bottom-20  -z-20 grid grid-cols-1 justify-items-center">
           <div class="overflow-hidden bg-[url('/fe/bg-intro-mobile.svg')]  bg-cover">
             <img
               class="relative bottom-[8vw]"
@@ -94,8 +94,8 @@ export default component$(() => {
               alt=""
             />
           </div>
-          <div class="relative bottom-12 max-w-sm py-4 flex flex-col items-center">
-            <h1 class=" text-4xl text-tp-darkBlue mb-4">
+          <div class="relative bottom-[8vw] flex max-w-sm flex-col items-center py-4">
+            <h1 class=" mb-4 text-4xl text-tp-darkBlue">
               Next generation digital banking
             </h1>
             <p class=" max-w-xs text-base">
@@ -103,7 +103,7 @@ export default component$(() => {
               one-stop-shop for spending, saving, budgeting, investing, and much
               more.
             </p>
-            <div class="relative top-6 ">
+            <div class="relative top-[8vw] ">
               <Button text="Request Invite"></Button>
             </div>
           </div>
