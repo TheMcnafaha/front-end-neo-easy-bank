@@ -5,9 +5,10 @@ import { Button } from "~/components/Button/button";
 export default component$(() => {
   const isMobileNavbarOpen = useSignal(false);
   return (
-    <div class="grid grid-cols-1">
+    <div class="grid grid-cols-1 text-center text-tp-grayishBlue">
+      {/* master grid */}
       <header class="text-center text-tp-darkBlue">
-        <nav class="border-gray-200 z-10 bg-white dark:bg-gray-900">
+        <nav class="z-10 border-gray-200 bg-white dark:bg-gray-900">
           <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
             <a href="/" class="flex items-center">
               <img
@@ -34,7 +35,7 @@ export default component$(() => {
               />
             </button>
             <div class="hidden w-full md:block md:w-auto " id="navbar-default">
-              <ul class="mt-4 max-w-sm my-0 mx-auto flex flex-col rounded-lg border border-gray-100 bg-gray-50  font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900">
+              <ul class="mx-auto my-0 mt-4 flex max-w-sm flex-col rounded-lg border border-gray-100 bg-gray-50  font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900">
                 <li>
                   <a
                     href="#"
@@ -85,27 +86,30 @@ export default component$(() => {
         </nav>
       </header>
       <main>
-        <picture class="bg-[url('fe/bg-intro-mobile.svg')]"></picture>
-        <div class="bg-[url('/fe/bg-intro-mobile.svg')] overflow-hidden  bg-cover">
-          <img
-            class="relative bottom-20 "
-            src="  fe/image-mockups.png "
-            alt=""
-          />
-        </div>
-        <section class=" px-4 grid grid-rows-1">
-          <div class="relative bottom-20">
-            <h2 class="">Next generation digital banking</h2>
-            <p class="">
+        <section class=" grid grid-cols-1  justify-items-center relative bottom-20 -z-20">
+          <div class="overflow-hidden bg-[url('/fe/bg-intro-mobile.svg')]  bg-cover">
+            <img
+              class="relative bottom-[8vw]"
+              src="  fe/image-mockups.png "
+              alt=""
+            />
+          </div>
+          <div class="relative bottom-12 max-w-sm py-4 flex flex-col items-center">
+            <h1 class=" text-4xl text-tp-darkBlue mb-4">
+              Next generation digital banking
+            </h1>
+            <p class=" max-w-xs text-base">
               Take your financial life online. Your Easybank account will be a
               one-stop-shop for spending, saving, budgeting, investing, and much
               more.
             </p>
-            <Button text="Request Invite"></Button>
+            <div class="relative top-6 ">
+              <Button text="Request Invite"></Button>
+            </div>
           </div>
         </section>
       </main>
-      <div class="px-4 bg-blue-200">
+      <div class="bg-blue-200 px-4">
         <h1>Hi 👋</h1>
         <p>{`${isMobileNavbarOpen.value}`}</p>
       </div>
