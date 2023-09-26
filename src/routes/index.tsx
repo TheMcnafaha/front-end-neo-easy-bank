@@ -86,15 +86,15 @@ export default component$(() => {
         </nav>
       </header>
       <main>
-        <section class=" relative bottom-20  -z-20 grid grid-cols-1 justify-items-center">
+        <section class=" relative md:bottom-0 bottom-20  -z-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
           <div class="overflow-hidden bg-[url('/fe/bg-intro-mobile.svg')]  bg-cover">
             <img
-              class="relative bottom-[8vw]"
+              class="relative md:bottom-0 bottom-[8vw]"
               src="  fe/image-mockups.png "
               alt=""
             />
           </div>
-          <div class="relative bottom-[8vw] flex max-w-sm flex-col items-center py-4">
+          <div class="relative md:bottom-0 bottom-[8vw] flex max-w-sm flex-col items-center py-4">
             <h1 class=" mb-4 text-4xl text-tp-darkBlue">
               Next generation digital banking
             </h1>
