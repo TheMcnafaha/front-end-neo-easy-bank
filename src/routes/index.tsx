@@ -9,7 +9,7 @@ export default component$(() => {
       {/* master grid */}
       <header class="text-center text-tp-darkBlue outline-red-900">
         <nav class="z-10 border-gray-200 bg-white dark:bg-gray-900">
-          <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+          <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4 lg:px-10">
             <a href="/" class="flex items-center">
               <img
                 src="/fe/logo.svg"
@@ -85,17 +85,17 @@ export default component$(() => {
           </div>
         </nav>
       </header>
-      <main>
-        <div class="max-w-screen-xl lg:pt-8">
-          <section class=" relative bottom-20 -z-20  grid grid-cols-1 justify-items-center md:bottom-0 md:grid-cols-2 md:overflow-hidden max-w-screen-xl">
-            <div class="overflow-hidden max-w-screen-lg bg-[url('/fe/bg-intro-mobile.svg')] bg-cover   object-left md:relative md:bottom-[8vw] lg:bottom-0 lg:max-w-[640px] md:col-start-2 md:row-start-1 md:w-[125%] lg:w-full  md:bg-[url('/fe/bg-intro-desktop.svg')] ">
+      <main class="md:flex md:flex-col md:items-center ">
+        <div class="max-w-screen-xl lg:pt-8  lg:px-10">
+          <section class=" relative bottom-20 -z-20  grid max-w-screen-xl grid-cols-1 md:bottom-0 md:grid-cols-2 md:justify-between md:justify-items-start justify-items-center md:overflow-hidden lg:overflow-visible">
+            <div class="max-w-screen-lg overflow-hidden lg:overflow-visible bg-[url('/fe/bg-intro-mobile.svg')] bg-cover   object-left md:relative md:bottom-[8vw] md:col-start-2 md:row-start-1 md:w-[125%] md:bg-[url('/fe/bg-intro-desktop.svg')] lg:bottom-0 lg:w-full  lg:max-w-[640px] ">
               <img
-                class="relative bottom-[8vw] md:bottom-0 md:pl-[15vw] lg:pl-32 lg:block"
+                class="relative bottom-[8vw] md:bottom-0 md:pl-[15vw] lg:block lg:pl-32"
                 src="  fe/image-mockups.png "
                 alt=""
               />
             </div>
-            <div class="relative bottom-[8vw] flex max-w-sm flex-col items-center py-4 md:bottom-0">
+            <div class="relative bottom-[8vw]  flex  max-w-sm flex-col md:content-center items-center py-4 md:bottom-0 md:items-start md:justify-center md:px-4 lg:px-0">
               <h1 class=" mb-4 text-4xl text-tp-darkBlue">
                 Next generation digital banking
               </h1>
@@ -104,14 +104,14 @@ export default component$(() => {
                 one-stop-shop for spending, saving, budgeting, investing, and
                 much more.
               </p>
-              <div class="relative top-[8vw] md:top-0 md:pt-6 ">
+              <div class="relative top-[8vw] md:block md:top-0 md:pt-6 hover:cursor-pointer">
                 <Button text="Request Invite"></Button>
               </div>
             </div>
           </section>
         </div>
       </main>
-      <div class="bg-blue-200 px-4">
+      <div class="bg-blue-200 px-4 lg:px-10">
         <h1>Hi 👋</h1>
         <p>{`${isMobileNavbarOpen.value}`}</p>
       </div>
