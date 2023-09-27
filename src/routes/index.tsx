@@ -1,6 +1,7 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Button } from "~/components/Button/button";
+import { ListItem } from "~/components/list-item/list-item";
 
 export default component$(() => {
   const isMobileNavbarOpen = useSignal(false);
@@ -86,28 +87,73 @@ export default component$(() => {
         </nav>
       </header>
       <main class="md:flex md:flex-col md:items-center ">
-        <div class="max-w-screen-xl lg:pt-8  lg:px-10">
-          <section class=" relative bottom-20 -z-20  grid max-w-screen-xl grid-cols-1 md:bottom-0 md:grid-cols-2 md:justify-between md:justify-items-start justify-items-center md:overflow-hidden lg:overflow-visible">
-            <div class="max-w-screen-lg overflow-hidden lg:overflow-visible bg-[url('/fe/bg-intro-mobile.svg')] bg-cover   object-left md:relative md:bottom-[8vw] md:col-start-2 md:row-start-1 md:w-[125%] md:bg-[url('/fe/bg-intro-desktop.svg')] lg:bottom-0 lg:w-full  lg:max-w-[640px] ">
+        <div class="max-w-screen-xl lg:px-10  lg:pt-8">
+          <section class=" relative bottom-20 -z-20  grid  grid-cols-1 justify-items-center md:bottom-0 md:grid-cols-2 md:justify-between md:justify-items-start md:overflow-hidden lg:overflow-visible">
+            <div class="max-w-screen-lg overflow-hidden bg-[url('/fe/bg-intro-mobile.svg')] bg-cover object-left   md:relative md:bottom-[8vw] md:col-start-2 md:row-start-1 md:w-[125%] md:bg-[url('/fe/bg-intro-desktop.svg')] lg:bottom-0 lg:w-full lg:max-w-[640px]  lg:overflow-visible ">
               <img
                 class="relative bottom-[8vw] md:bottom-0 md:pl-[15vw] lg:block lg:pl-32"
                 src="  fe/image-mockups.png "
                 alt=""
               />
             </div>
-            <div class="relative bottom-[8vw]  flex  max-w-sm flex-col md:content-center items-center py-4 md:bottom-0 md:items-start md:justify-center md:px-4 lg:px-0">
+            <div class="relative bottom-[8vw]  flex  max-w-sm flex-col items-center py-4 md:bottom-0 md:content-center md:items-start md:justify-center md:px-4 lg:px-0">
               <h1 class=" mb-4 text-4xl text-tp-darkBlue">
                 Next generation digital banking
               </h1>
-              <p class=" max-w-xs text-base">
+              <p class=" max-w-xs md:max-w-full text-base">
                 Take your financial life online. Your Easybank account will be a
                 one-stop-shop for spending, saving, budgeting, investing, and
                 much more.
               </p>
-              <div class="relative top-[8vw] md:block md:top-0 md:pt-6 hover:cursor-pointer">
+              <div class="relative top-[8vw] hover:cursor-pointer md:top-0 md:block md:pt-6">
                 <Button text="Request Invite"></Button>
               </div>
             </div>
+          </section>
+        </div>
+
+        <div class=" w-full grid grid-cols-1 justify-items-center     md:justify-start bg-tp-lightGrayish ">
+          <section class="pt-16  md:grid md:grid-cols-2 md:grid-rows-1 ">
+            <div class="mb-16 max-w-[340px] md:max-w-md md:row-start-1 md:col-span-2 md:justify-self-center md:text-center">
+              <h2 class="mb-4 px-4 text-3xl text-tp-darkBlue">
+                {" "}
+                Why choose Easybank?{" "}
+              </h2>
+              <p class="px-3 md:px-4">
+                {" "}
+                We leverage Open Banking to turn your bank account into your
+                financial hub. Control your finances like never before.{" "}
+              </p>
+            </div>
+            <ul class="md:col-start-1  col-span-2 md:row-start-2 md:grid md:grid-cols-2 md:px-4 self-center ">
+              <ListItem
+                title="Online Banking"
+                description="
+  Our modern web and mobile applications allow you to keep track of your finances 
+  wherever you are in the world."
+                img_link="fe/icon-online.svg"
+                img_alt="digital drawing of a credit card"
+              ></ListItem>
+
+              <ListItem
+                title="Simple Budgeting"
+                description="See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits. "
+                img_link="fe/icon-budgeting.svg"
+                img_alt="digital drawing of a credit card"
+              ></ListItem>
+              <ListItem
+                title="Fast Onboarding"
+                description=" We don’t do branches. Open your account in minutes online and start taking control of your finances right away. "
+                img_link="fe/icon-onboarding.svg"
+                img_alt="digital drawing of a credit card"
+              ></ListItem>
+              <ListItem
+                title="Open API"
+                description=" Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier. "
+                img_link="fe/icon-api.svg"
+                img_alt="digital drawing of a credit card"
+              ></ListItem>
+            </ul>
           </section>
         </div>
       </main>
