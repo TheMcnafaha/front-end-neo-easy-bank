@@ -5,9 +5,9 @@ import { Button } from "~/components/Button/button";
 export default component$(() => {
   const isMobileNavbarOpen = useSignal(false);
   return (
-    <div class="grid grid-cols-1 text-center text-tp-grayishBlue">
+    <div class="grid grid-cols-1 text-center text-tp-grayishBlue md:text-left">
       {/* master grid */}
-      <header class="text-center text-tp-darkBlue">
+      <header class="text-center text-tp-darkBlue outline-red-900">
         <nav class="z-10 border-gray-200 bg-white dark:bg-gray-900">
           <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
             <a href="/" class="flex items-center">
@@ -86,28 +86,30 @@ export default component$(() => {
         </nav>
       </header>
       <main>
-        <section class=" relative md:bottom-0 bottom-20  -z-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
-          <div class="overflow-hidden bg-[url('/fe/bg-intro-mobile.svg')]  bg-cover">
-            <img
-              class="relative md:bottom-0 bottom-[8vw]"
-              src="  fe/image-mockups.png "
-              alt=""
-            />
-          </div>
-          <div class="relative md:bottom-0 bottom-[8vw] flex max-w-sm flex-col items-center py-4">
-            <h1 class=" mb-4 text-4xl text-tp-darkBlue">
-              Next generation digital banking
-            </h1>
-            <p class=" max-w-xs text-base">
-              Take your financial life online. Your Easybank account will be a
-              one-stop-shop for spending, saving, budgeting, investing, and much
-              more.
-            </p>
-            <div class="relative top-[8vw] ">
-              <Button text="Request Invite"></Button>
+        <div class="max-w-screen-xl lg:pt-8">
+          <section class=" relative bottom-20 -z-20  grid grid-cols-1 justify-items-center md:bottom-0 md:grid-cols-2 md:overflow-hidden max-w-screen-xl">
+            <div class="overflow-hidden max-w-screen-lg bg-[url('/fe/bg-intro-mobile.svg')] bg-cover   object-left md:relative md:bottom-[8vw] lg:bottom-0 lg:max-w-[640px] md:col-start-2 md:row-start-1 md:w-[125%] lg:w-full  md:bg-[url('/fe/bg-intro-desktop.svg')] ">
+              <img
+                class="relative bottom-[8vw] md:bottom-0 md:pl-[15vw] lg:pl-32 lg:block"
+                src="  fe/image-mockups.png "
+                alt=""
+              />
             </div>
-          </div>
-        </section>
+            <div class="relative bottom-[8vw] flex max-w-sm flex-col items-center py-4 md:bottom-0">
+              <h1 class=" mb-4 text-4xl text-tp-darkBlue">
+                Next generation digital banking
+              </h1>
+              <p class=" max-w-xs text-base">
+                Take your financial life online. Your Easybank account will be a
+                one-stop-shop for spending, saving, budgeting, investing, and
+                much more.
+              </p>
+              <div class="relative top-[8vw] md:top-0 md:pt-6 ">
+                <Button text="Request Invite"></Button>
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
       <div class="bg-blue-200 px-4">
         <h1>Hi 👋</h1>
