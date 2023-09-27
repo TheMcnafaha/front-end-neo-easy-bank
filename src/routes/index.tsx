@@ -1,6 +1,7 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Button } from "~/components/Button/button";
+import { Card } from "~/components/card/card";
 import { ListItem } from "~/components/list-item/list-item";
 
 export default component$(() => {
@@ -112,8 +113,8 @@ export default component$(() => {
           </section>
         </div>
 
-        <div class=" grid w-full grid-cols-1 justify-items-center     bg-tp-lightGrayish md:justify-start lg:justify-start xl:px-10  md:text-center  lg:text-left">
-          <section class="pt-16  md:grid md:grid-cols-2 md:grid-rows-1 lg:w-full max-w-screen-xl   lg:px-10 ">
+        <div class=" grid w-full grid-cols-1 justify-items-center     bg-tp-lightGrayish md:justify-start md:text-center lg:justify-start  lg:text-left  xl:px-10">
+          <section class="max-w-screen-xl  py-16 md:grid md:grid-cols-2 md:grid-rows-1 lg:w-full   lg:px-10 ">
             <div class="mb-16 max-w-[340px] md:col-span-2 md:row-start-1 md:max-w-md md:justify-self-center lg:justify-start lg:justify-self-start  ">
               <h2 class="mb-4 px-4 text-3xl text-tp-darkBlue lg:px-0">
                 Why choose Easybank?
@@ -124,7 +125,7 @@ export default component$(() => {
                 financial hub. Control your finances like never before.{" "}
               </p>
             </div>
-            <ul class="col-span-2  self-center md:col-start-1 gap-4 md:row-start-2 md:grid md:grid-cols-2 md:px-4 lg:grid-cols-4 lg:self-start lg:px-0">
+            <ul class="col-span-2  gap-4 self-center md:col-start-1 md:row-start-2 md:grid md:grid-cols-2 md:px-4 lg:grid-cols-4 lg:self-start lg:px-0">
               <ListItem
                 title="Online Banking"
                 description="
@@ -152,6 +153,49 @@ export default component$(() => {
                 img_link="fe/icon-api.svg"
                 img_alt="digital drawing of a credit card"
               ></ListItem>
+            </ul>
+          </section>
+        </div>
+        <div class=" py-16 w-full bg-tp-veryLightGray xl:flex xl:flex-col xl:items-center ">
+          <section class="flex flex-col items-center max-w-screen-xl ">
+            <h3 class="pb-16 text-3xl text-tp-darkBlue">Latest Articles</h3>
+            <ul class="max-w-sm md:max-w-screen-xl md:gap-8 md:col-start-1 md:row-start-2 md:grid md:grid-cols-2 md:px-4 px-4 xl:grid-cols-4 xl:self-center xl:px-0">
+              <li>
+                <Card
+                  title="Recieve money in any curency with no fees"
+                  author="Claire Robinson"
+                  intro_text=" The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single … "
+                  img_link="fe/image-currency.jpg"
+                  img_alt="multiple and different dollars spread around"
+                ></Card>
+              </li>
+              <li>
+                <Card
+                  title="Treat yourself without worrying about money"
+                  author="Wilson Hutton"
+                  intro_text=" Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you … "
+                  img_link="fe/image-restaurant.jpg"
+                  img_alt="airplane wing amid cluods on a sunny day"
+                ></Card>
+              </li>
+              <li>
+                <Card
+                  title="Take your Easybank card wherever you go"
+                  author="Wilson Hutton"
+                  intro_text=" We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you … "
+                  img_link="fe/image-plane.jpg"
+                  img_alt="colorful confetti thrown against a blue wall"
+                ></Card>
+              </li>
+              <li>
+                <Card
+                  title="Our invite-only Beta accounts are now live!"
+                  author="Claire Robinson"
+                  intro_text=" Our invite-only Beta accounts are now live! After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ... "
+                  img_link="fe/image-confetti.jpg"
+                  img_alt="multiple and different dollars spread around"
+                ></Card>
+              </li>
             </ul>
           </section>
         </div>
