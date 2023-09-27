@@ -100,7 +100,7 @@ export default component$(() => {
               <h1 class=" mb-4 text-4xl text-tp-darkBlue">
                 Next generation digital banking
               </h1>
-              <p class=" max-w-xs md:max-w-full text-base">
+              <p class=" max-w-xs text-base md:max-w-full">
                 Take your financial life online. Your Easybank account will be a
                 one-stop-shop for spending, saving, budgeting, investing, and
                 much more.
@@ -112,20 +112,19 @@ export default component$(() => {
           </section>
         </div>
 
-        <div class=" w-full grid grid-cols-1 justify-items-center     md:justify-start bg-tp-lightGrayish ">
-          <section class="pt-16  md:grid md:grid-cols-2 md:grid-rows-1 ">
-            <div class="mb-16 max-w-[340px] md:max-w-md md:row-start-1 md:col-span-2 md:justify-self-center md:text-center">
-              <h2 class="mb-4 px-4 text-3xl text-tp-darkBlue">
-                {" "}
-                Why choose Easybank?{" "}
+        <div class=" grid w-full grid-cols-1 justify-items-center     bg-tp-lightGrayish md:justify-start lg:justify-start xl:px-10  md:text-center  lg:text-left">
+          <section class="pt-16  md:grid md:grid-cols-2 md:grid-rows-1 lg:w-full max-w-screen-xl   lg:px-10 ">
+            <div class="mb-16 max-w-[340px] md:col-span-2 md:row-start-1 md:max-w-md md:justify-self-center lg:justify-start lg:justify-self-start  ">
+              <h2 class="mb-4 px-4 text-3xl text-tp-darkBlue lg:px-0">
+                Why choose Easybank?
               </h2>
-              <p class="px-3 md:px-4">
+              <p class="px-3 md:px-4 lg:px-0">
                 {" "}
                 We leverage Open Banking to turn your bank account into your
                 financial hub. Control your finances like never before.{" "}
               </p>
             </div>
-            <ul class="md:col-start-1  col-span-2 md:row-start-2 md:grid md:grid-cols-2 md:px-4 self-center ">
+            <ul class="col-span-2  self-center md:col-start-1 gap-4 md:row-start-2 md:grid md:grid-cols-2 md:px-4 lg:grid-cols-4 lg:self-start lg:px-0">
               <ListItem
                 title="Online Banking"
                 description="
