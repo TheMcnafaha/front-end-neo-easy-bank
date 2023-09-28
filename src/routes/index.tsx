@@ -6,9 +6,9 @@ import { ListItem } from "~/components/list-item/list-item";
 
 export default component$(() => {
   return (
-    <div class="grid grid-cols-1 text-center text-tp-grayishBlue md:text-left">
+    <div class="text-tp-grayishBlue grid grid-cols-1 text-center md:text-left">
       {/* master grid */}
-      <header class="text-center text-tp-darkBlue outline-red-900">
+      <header class="text-tp-darkBlue text-center outline-red-900">
         <nav class="z-10 border-gray-200 bg-white dark:bg-gray-900">
           <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4 lg:px-10">
             <a href="/" class="flex items-center">
@@ -40,43 +40,123 @@ export default component$(() => {
                 <li>
                   <a
                     href="#"
-                    class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                    class="md:hover:text-tp-darkBlue md:text-tp-grayishBlue block rounded py-2  pl-3 pr-4 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent "
                     aria-current="page"
+                    onMouseOver$={function show() {
+                      document.getElementById(
+                        "nav_item_home",
+                      )!.style.visibility = "visible";
+                      console.log("lol magic");
+                    }}
+                    onMouseOut$={function hide() {
+                      document.getElementById(
+                        "nav_item_home",
+                      )!.style.visibility = "hidden";
+                      console.log("lol wizard");
+                    }}
                   >
                     Home
                   </a>
+                  <div
+                    id="nav_item_home"
+                    class=" from-tp-limeGreen to-tp-brightCyan   invisible relative top-4 h-1 w-full bg-gradient-to-r md:invisible"
+                  ></div>
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                    class="md:hover:text-tp-darkBlue md:text-tp-grayishBlue block rounded py-2  pl-3 pr-4 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent "
+                    onMouseOver$={function show() {
+                      document.getElementById(
+                        "nav_item_about",
+                      )!.style.visibility = "visible";
+                      console.log("lol magic");
+                    }}
+                    onMouseOut$={function hide() {
+                      document.getElementById(
+                        "nav_item_about",
+                      )!.style.visibility = "hidden";
+                      console.log("lol wizard");
+                    }}
                   >
                     About
+                    <div
+                      id="nav_item_about"
+                      class=" from-tp-limeGreen to-tp-brightCyan   invisible relative top-4 h-1 w-full bg-gradient-to-r md:invisible"
+                    ></div>
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                    class="md:hover:text-tp-darkBlue md:text-tp-grayishBlue block rounded py-2  pl-3 pr-4 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent "
+                    onMouseOver$={function show() {
+                      document.getElementById(
+                        "nav_item_contact",
+                      )!.style.visibility = "visible";
+                      console.log("lol magic");
+                    }}
+                    onMouseOut$={function hide() {
+                      document.getElementById(
+                        "nav_item_contact",
+                      )!.style.visibility = "hidden";
+                      console.log("lol wizard");
+                    }}
                   >
                     Contact
                   </a>
+                  <div
+                    id="nav_item_contact"
+                    class=" from-tp-limeGreen to-tp-brightCyan   invisible relative top-4 h-1 w-full bg-gradient-to-r md:invisible"
+                  ></div>
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                    class="md:hover:text-tp-darkBlue md:text-tp-grayishBlue block rounded py-2  pl-3 pr-4 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent "
+                    onMouseOver$={function show() {
+                      document.getElementById(
+                        "nav_item_blog",
+                      )!.style.visibility = "visible";
+                      console.log("lol magic");
+                    }}
+                    onMouseOut$={function hide() {
+                      document.getElementById(
+                        "nav_item_blog",
+                      )!.style.visibility = "hidden";
+                      console.log("lol wizard");
+                    }}
                   >
                     Blog
                   </a>
+                  <div
+                    id="nav_item_blog"
+                    class=" from-tp-limeGreen to-tp-brightCyan   invisible relative top-4 h-1 w-full bg-gradient-to-r md:invisible"
+                  ></div>
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+                    class="md:hover:text-tp-darkBlue md:text-tp-grayishBlue block rounded py-2  pl-3 pr-4 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent "
+                    onMouseOver$={function show() {
+                      document.getElementById(
+                        "nav_item_careers",
+                      )!.style.visibility = "visible";
+                      console.log("lol magic");
+                    }}
+                    onMouseOut$={function hide() {
+                      document.getElementById(
+                        "nav_item_careers",
+                      )!.style.visibility = "hidden";
+                      console.log("lol wizard");
+                    }}
                   >
                     Careers
                   </a>
+                  <div
+                    id="nav_item_careers"
+                    class=" from-tp-limeGreen to-tp-brightCyan   invisible relative top-4 h-1 w-full bg-gradient-to-r md:invisible"
+                  ></div>
                 </li>
               </ul>
             </div>
@@ -97,7 +177,7 @@ export default component$(() => {
               />
             </div>
             <div class="relative bottom-[8vw]  flex  max-w-sm flex-col items-center py-4 md:bottom-0 md:content-center md:items-start md:justify-center md:px-4 lg:px-0">
-              <h1 class=" mb-4  text-4xl lg:text-5xl text-tp-darkBlue">
+              <h1 class=" text-tp-darkBlue  mb-4 text-4xl lg:text-5xl">
                 Next generation digital banking
               </h1>
               <p class=" max-w-xs text-base md:max-w-full">
@@ -112,10 +192,10 @@ export default component$(() => {
           </section>
         </div>
 
-        <div class=" grid w-full grid-cols-1 justify-items-center     bg-tp-lightGrayish md:justify-start md:text-center lg:justify-start  lg:text-left  xl:px-10">
+        <div class=" bg-tp-lightGrayish grid w-full grid-cols-1     justify-items-center md:justify-start md:text-center lg:justify-start  lg:text-left  xl:px-10">
           <section class="max-w-screen-xl  py-16 md:grid md:grid-cols-2 md:grid-rows-1 lg:w-full   lg:px-10 ">
             <div class="mb-16 max-w-[340px] md:col-span-2 md:row-start-1 md:max-w-md md:justify-self-center lg:justify-start lg:justify-self-start  ">
-              <h2 class="mb-4 px-4 lg:text-4xl text-3xl text-tp-darkBlue lg:px-0">
+              <h2 class="text-tp-darkBlue mb-4 px-4 text-3xl lg:px-0 lg:text-4xl">
                 Why choose Easybank?
               </h2>
               <p class="px-3 md:px-4 lg:px-0">
@@ -124,7 +204,7 @@ export default component$(() => {
                 financial hub. Control your finances like never before.{" "}
               </p>
             </div>
-            <ul class="col-span-2  gap-4 self-center md:col-start-1 md:row-start-2 lg:gap-10 md:grid md:grid-cols-2 md:px-4 lg:grid-cols-4 lg:self-start lg:px-0">
+            <ul class="col-span-2  gap-4 self-center md:col-start-1 md:row-start-2 md:grid md:grid-cols-2 md:px-4 lg:grid-cols-4 lg:gap-10 lg:self-start lg:px-0">
               <ListItem
                 title="Online Banking"
                 description="
@@ -155,12 +235,12 @@ export default component$(() => {
             </ul>
           </section>
         </div>
-        <div class=" py-16 w-full bg-tp-veryLightGray xl:flex xl:flex-col xl:items-center ">
-          <section class="flex flex-col items-center max-w-screen-xl ">
-            <h3 class="pb-16 text-3xl text-tp-darkBlue lg:text-4xl">
+        <div class=" bg-tp-veryLightGray w-full py-16 xl:flex xl:flex-col xl:items-center ">
+          <section class="flex max-w-screen-xl flex-col items-center ">
+            <h3 class="text-tp-darkBlue pb-16 text-3xl lg:text-4xl">
               Latest Articles
             </h3>
-            <ul class="max-w-sm md:max-w-screen-xl md:gap-8 md:col-start-1 md:row-start-2 md:grid md:grid-cols-2 md:px-4 px-4 xl:grid-cols-4 xl:self-center xl:px-0">
+            <ul class="max-w-sm px-4 md:col-start-1 md:row-start-2 md:grid md:max-w-screen-xl md:grid-cols-2 md:gap-8 md:px-4 xl:grid-cols-4 xl:self-center xl:px-0">
               <li>
                 <Card
                   title="Recieve money in any curency with no fees"
@@ -201,8 +281,8 @@ export default component$(() => {
           </section>
         </div>
       </main>
-      <footer class="bg-tp-darkBlue py-10 flex justify-center">
-        <div class="flex flex-col items-center gap-8 lg:gap-0 md:grid md:grid-cols-3 md:justify-between max-w-screen-xl w-full lg:px-10 px-4">
+      <footer class="bg-tp-darkBlue flex justify-center py-10">
+        <div class="flex w-full max-w-screen-xl flex-col items-center gap-8 px-4 md:grid md:grid-cols-3 md:justify-between lg:gap-0 lg:px-10">
           <div class="flex flex-col items-start gap-8 lg:self-start lg:justify-self-start">
             <img class="" src="fe/logo-alt.svg" alt="logo of EasyBank" />
             <ul class=" flex justify-around gap-4">
@@ -224,7 +304,7 @@ export default component$(() => {
             </ul>
           </div>
           {/*  lesson learned: dont flex svgs xddd  */}
-          <div class=" flex max-w-xs flex-col md:flex-row md:justify-between md:pr-10 items-center gap-3">
+          <div class=" flex max-w-xs flex-col items-center gap-3 md:flex-row md:justify-between md:pr-10">
             <ul class="mb-3 flex flex-col items-center gap-2 text-xs text-white">
               <li>About Us</li>
               <li>Contact</li>
@@ -239,7 +319,7 @@ export default component$(() => {
 
           <div class="flex flex-col items-center gap-2 pt-2 lg:justify-self-end">
             <Button text="Request Invite"></Button>
-            <p class="mt-3 text-xs text-tp-grayishBlue">
+            <p class="text-tp-grayishBlue mt-3 text-xs">
               {" "}
               {" © Easybank. All Rights Reserved "}{" "}
             </p>
