@@ -200,11 +200,10 @@ export default component$(() => {
           </section>
         </div>
       </main>
-      <footer class="bg-tp-darkBlue py-10">
-        <div class="flex flex-col items-center gap-8">
-          <img class="" src="fe/logo-alt.svg" alt="logo of EasyBank" />
-          {/*  lesson learned: dont flex svgs xddd  */}
-          <div class=" flex max-w-xs flex-col items-center gap-3">
+      <footer class="bg-tp-darkBlue py-10 flex justify-center">
+        <div class="flex flex-col items-center gap-8 lg:gap-0 md:grid md:grid-cols-3 md:justify-between max-w-screen-xl w-full lg:px-10 px-4">
+          <div class="flex flex-col items-start gap-8 lg:self-start lg:justify-self-start">
+            <img class="" src="fe/logo-alt.svg" alt="logo of EasyBank" />
             <ul class=" flex justify-around gap-4">
               <li>
                 <img src="fe/icon-facebook.svg" alt="logo of Facebook" />
@@ -222,14 +221,22 @@ export default component$(() => {
                 <img src="fe/icon-instagram.svg " alt="logo of Instagram" />
               </li>
             </ul>
+          </div>
+          {/*  lesson learned: dont flex svgs xddd  */}
+          <div class=" flex max-w-xs flex-col md:flex-row md:justify-between md:pr-10 items-center gap-3">
             <ul class="mb-3 flex flex-col items-center gap-2 text-xs text-white">
               <li>About Us</li>
               <li>Contact</li>
               <li>Blog</li>
+            </ul>
+            <ul class="mb-3 flex flex-col items-center gap-2 text-xs text-white">
               <li>Careers</li>
               <li>Support</li>
               <li>Privacy Policy</li>
             </ul>
+          </div>
+
+          <div class="flex flex-col items-center gap-2 pt-2 lg:justify-self-end">
             <Button text="Request Invite"></Button>
             <p class="mt-3 text-xs text-tp-grayishBlue">
               {" "}
