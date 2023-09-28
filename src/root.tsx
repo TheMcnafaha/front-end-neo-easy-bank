@@ -27,6 +27,10 @@ export default component$(() => {
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body lang="en">
         <RouterOutlet />

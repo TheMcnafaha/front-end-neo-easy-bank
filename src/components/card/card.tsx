@@ -20,7 +20,7 @@ export const Card = component$<CardProps>(
           <h5 class="mb-4 text-xs font-light text-tp-grayishBlue">
             By {author}
           </h5>
-          <h4 class="mb-2 text-lg text-tp-darkBlue">{title}</h4>
+          <h4 class="mb-2 font-medium text-lg text-tp-darkBlue">{title}</h4>
           <p class="text-sm text-tp-grayishBlue">{intro_text}</p>
         </div>
       </div>

@@ -5,7 +5,6 @@ import { Card } from "~/components/card/card";
 import { ListItem } from "~/components/list-item/list-item";
 
 export default component$(() => {
-  const isMobileNavbarOpen = useSignal(false);
   return (
     <div class="grid grid-cols-1 text-center text-tp-grayishBlue md:text-left">
       {/* master grid */}
@@ -98,7 +97,7 @@ export default component$(() => {
               />
             </div>
             <div class="relative bottom-[8vw]  flex  max-w-sm flex-col items-center py-4 md:bottom-0 md:content-center md:items-start md:justify-center md:px-4 lg:px-0">
-              <h1 class=" mb-4 text-4xl text-tp-darkBlue">
+              <h1 class=" mb-4  text-4xl lg:text-5xl text-tp-darkBlue">
                 Next generation digital banking
               </h1>
               <p class=" max-w-xs text-base md:max-w-full">
@@ -116,7 +115,7 @@ export default component$(() => {
         <div class=" grid w-full grid-cols-1 justify-items-center     bg-tp-lightGrayish md:justify-start md:text-center lg:justify-start  lg:text-left  xl:px-10">
           <section class="max-w-screen-xl  py-16 md:grid md:grid-cols-2 md:grid-rows-1 lg:w-full   lg:px-10 ">
             <div class="mb-16 max-w-[340px] md:col-span-2 md:row-start-1 md:max-w-md md:justify-self-center lg:justify-start lg:justify-self-start  ">
-              <h2 class="mb-4 px-4 text-3xl text-tp-darkBlue lg:px-0">
+              <h2 class="mb-4 px-4 lg:text-4xl text-3xl text-tp-darkBlue lg:px-0">
                 Why choose Easybank?
               </h2>
               <p class="px-3 md:px-4 lg:px-0">
@@ -125,7 +124,7 @@ export default component$(() => {
                 financial hub. Control your finances like never before.{" "}
               </p>
             </div>
-            <ul class="col-span-2  gap-4 self-center md:col-start-1 md:row-start-2 md:grid md:grid-cols-2 md:px-4 lg:grid-cols-4 lg:self-start lg:px-0">
+            <ul class="col-span-2  gap-4 self-center md:col-start-1 md:row-start-2 lg:gap-10 md:grid md:grid-cols-2 md:px-4 lg:grid-cols-4 lg:self-start lg:px-0">
               <ListItem
                 title="Online Banking"
                 description="
@@ -158,7 +157,9 @@ export default component$(() => {
         </div>
         <div class=" py-16 w-full bg-tp-veryLightGray xl:flex xl:flex-col xl:items-center ">
           <section class="flex flex-col items-center max-w-screen-xl ">
-            <h3 class="pb-16 text-3xl text-tp-darkBlue">Latest Articles</h3>
+            <h3 class="pb-16 text-3xl text-tp-darkBlue lg:text-4xl">
+              Latest Articles
+            </h3>
             <ul class="max-w-sm md:max-w-screen-xl md:gap-8 md:col-start-1 md:row-start-2 md:grid md:grid-cols-2 md:px-4 px-4 xl:grid-cols-4 xl:self-center xl:px-0">
               <li>
                 <Card

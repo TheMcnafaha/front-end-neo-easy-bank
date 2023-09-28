@@ -13,7 +13,7 @@ export const ListItem = component$<ListItemProps>(
     return (
       <li class="flex flex-col items-center lg:items-start my-10">
         <img src={img_link} alt={img_alt} />
-        <h4 class="text-tp-darkBlue text-xl my-4">{title} </h4>
+        <h4 class="text-tp-darkBlue text-xl lg:text-2xl my-4">{title} </h4>
         <p class="max-w-[340px]">{description}</p>
       </li>
     );
