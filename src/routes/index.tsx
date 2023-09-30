@@ -169,7 +169,7 @@ export default component$(() => {
       </header>
       <main class="md:flex md:flex-col md:items-center ">
         <div class="max-w-screen-xl lg:px-10  lg:pt-8">
-          <section class=" relative bottom-20 -z-20  grid  grid-cols-1 justify-items-center md:bottom-0 md:grid-cols-2 md:justify-between md:justify-items-start md:overflow-hidden lg:overflow-visible">
+          <section class=" relative bottom-20 -z-20 md:z-0  grid  grid-cols-1 justify-items-center md:bottom-0 md:grid-cols-2 md:justify-between md:justify-items-start md:overflow-hidden lg:overflow-visible">
             <div class="max-w-screen-lg overflow-hidden bg-[url('/fe/bg-intro-mobile.svg')] bg-cover object-left   md:relative md:bottom-[8vw] md:col-start-2 md:row-start-1 md:w-[125%] md:bg-[url('/fe/bg-intro-desktop.svg')] lg:bottom-0 lg:w-full lg:max-w-[640px]  lg:overflow-visible ">
               <img
                 class="relative bottom-[8vw] md:bottom-0 md:pl-[15vw] lg:block lg:pl-32"
@@ -186,7 +186,7 @@ export default component$(() => {
                 one-stop-shop for spending, saving, budgeting, investing, and
                 much more.
               </p>
-              <div class="relative top-[8vw] hover:cursor-pointer md:top-0 md:block md:pt-6">
+              <div class="relative top-[8vw]  z-20 md:top-0 md:block md:pt-6">
                 <Button text="Request Invite"></Button>
               </div>
             </div>
