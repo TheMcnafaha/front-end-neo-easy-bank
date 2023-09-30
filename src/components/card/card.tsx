@@ -10,9 +10,9 @@ export interface CardProps {
 export const Card = component$<CardProps>(
   ({ img_link, img_alt, author, title, intro_text }) => {
     return (
-      <div class="pb-6 drop-shadow-sm max-w-md">
+      <div class="max-w-md pb-6 drop-shadow-sm">
         <img
-          class=" rounded-t-lg md:h-[300px] xl:h-[220px] object-cover md:w-full"
+          class=" rounded-t-lg object-cover md:h-[300px] md:w-full xl:h-[220px]"
           src={img_link}
           alt={img_alt}
         />
@@ -20,7 +20,9 @@ export const Card = component$<CardProps>(
           <h5 class="mb-4 text-xs font-light text-tp-grayishBlue">
             By {author}
           </h5>
-          <h4 class="mb-2 font-medium text-lg text-tp-darkBlue">{title}</h4>
+          <h4 class="mb-2 text-lg font-medium text-tp-darkBlue lg:hover:cursor-pointer lg:hover:bg-gradient-to-b lg:hover:from-tp-limeGreen lg:hover:to-tp-brightCyan lg:hover:bg-clip-text lg:hover:text-transparent">
+            {title}
+          </h4>
           <p class="text-sm text-tp-grayishBlue">{intro_text}</p>
         </div>
       </div>

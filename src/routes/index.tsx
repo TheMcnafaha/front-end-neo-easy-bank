@@ -5,10 +5,11 @@ import { Card } from "~/components/card/card";
 import { ListItem } from "~/components/list-item/list-item";
 
 export default component$(() => {
+  function hover(element: Element) {}
   return (
-    <div class="text-tp-grayishBlue grid grid-cols-1 text-center md:text-left">
+    <div class="grid grid-cols-1 text-center text-tp-grayishBlue md:text-left">
       {/* master grid */}
-      <header class="text-tp-darkBlue text-center outline-red-900">
+      <header class="text-center text-tp-darkBlue outline-red-900">
         <nav class="z-10 border-gray-200 bg-white dark:bg-gray-900">
           <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4 lg:px-10">
             <a href="/" class="flex items-center">
@@ -40,7 +41,7 @@ export default component$(() => {
                 <li>
                   <a
                     href="#"
-                    class="md:hover:text-tp-darkBlue md:text-tp-grayishBlue block rounded py-2  pl-3 pr-4 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent "
+                    class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     aria-current="page"
                     onMouseOver$={function show() {
                       document.getElementById(
@@ -59,13 +60,13 @@ export default component$(() => {
                   </a>
                   <div
                     id="nav_item_home"
-                    class=" from-tp-limeGreen to-tp-brightCyan   invisible relative top-4 h-1 w-full bg-gradient-to-r md:invisible"
+                    class=" invisible relative   top-4 h-1 w-full bg-gradient-to-r from-tp-limeGreen to-tp-brightCyan md:invisible"
                   ></div>
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="md:hover:text-tp-darkBlue md:text-tp-grayishBlue block rounded py-2  pl-3 pr-4 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent "
+                    class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     onMouseOver$={function show() {
                       document.getElementById(
                         "nav_item_about",
@@ -82,14 +83,14 @@ export default component$(() => {
                     About
                     <div
                       id="nav_item_about"
-                      class=" from-tp-limeGreen to-tp-brightCyan   invisible relative top-4 h-1 w-full bg-gradient-to-r md:invisible"
+                      class=" invisible relative   top-4 h-1 w-full bg-gradient-to-r from-tp-limeGreen to-tp-brightCyan md:invisible"
                     ></div>
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="md:hover:text-tp-darkBlue md:text-tp-grayishBlue block rounded py-2  pl-3 pr-4 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent "
+                    class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     onMouseOver$={function show() {
                       document.getElementById(
                         "nav_item_contact",
@@ -107,13 +108,13 @@ export default component$(() => {
                   </a>
                   <div
                     id="nav_item_contact"
-                    class=" from-tp-limeGreen to-tp-brightCyan   invisible relative top-4 h-1 w-full bg-gradient-to-r md:invisible"
+                    class=" invisible relative   top-4 h-1 w-full bg-gradient-to-r from-tp-limeGreen to-tp-brightCyan md:invisible"
                   ></div>
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="md:hover:text-tp-darkBlue md:text-tp-grayishBlue block rounded py-2  pl-3 pr-4 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent "
+                    class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     onMouseOver$={function show() {
                       document.getElementById(
                         "nav_item_blog",
@@ -131,13 +132,13 @@ export default component$(() => {
                   </a>
                   <div
                     id="nav_item_blog"
-                    class=" from-tp-limeGreen to-tp-brightCyan   invisible relative top-4 h-1 w-full bg-gradient-to-r md:invisible"
+                    class=" invisible relative   top-4 h-1 w-full bg-gradient-to-r from-tp-limeGreen to-tp-brightCyan md:invisible"
                   ></div>
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="md:hover:text-tp-darkBlue md:text-tp-grayishBlue block rounded py-2  pl-3 pr-4 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent "
+                    class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     onMouseOver$={function show() {
                       document.getElementById(
                         "nav_item_careers",
@@ -155,7 +156,7 @@ export default component$(() => {
                   </a>
                   <div
                     id="nav_item_careers"
-                    class=" from-tp-limeGreen to-tp-brightCyan   invisible relative top-4 h-1 w-full bg-gradient-to-r md:invisible"
+                    class=" invisible relative   top-4 h-1 w-full bg-gradient-to-r from-tp-limeGreen to-tp-brightCyan md:invisible"
                   ></div>
                 </li>
               </ul>
@@ -177,7 +178,7 @@ export default component$(() => {
               />
             </div>
             <div class="relative bottom-[8vw]  flex  max-w-sm flex-col items-center py-4 md:bottom-0 md:content-center md:items-start md:justify-center md:px-4 lg:px-0">
-              <h1 class=" text-tp-darkBlue  mb-4 text-4xl lg:text-5xl">
+              <h1 class=" mb-4  text-4xl text-tp-darkBlue lg:text-5xl">
                 Next generation digital banking
               </h1>
               <p class=" max-w-xs text-base md:max-w-full">
@@ -192,10 +193,10 @@ export default component$(() => {
           </section>
         </div>
 
-        <div class=" bg-tp-lightGrayish grid w-full grid-cols-1     justify-items-center md:justify-start md:text-center lg:justify-start  lg:text-left  xl:px-10">
+        <div class=" grid w-full grid-cols-1 justify-items-center     bg-tp-lightGrayish md:justify-start md:text-center lg:justify-start  lg:text-left  xl:px-10">
           <section class="max-w-screen-xl  py-16 md:grid md:grid-cols-2 md:grid-rows-1 lg:w-full   lg:px-10 ">
             <div class="mb-16 max-w-[340px] md:col-span-2 md:row-start-1 md:max-w-md md:justify-self-center lg:justify-start lg:justify-self-start  ">
-              <h2 class="text-tp-darkBlue mb-4 px-4 text-3xl lg:px-0 lg:text-4xl">
+              <h2 class="mb-4 px-4 text-3xl text-tp-darkBlue lg:px-0 lg:text-4xl">
                 Why choose Easybank?
               </h2>
               <p class="px-3 md:px-4 lg:px-0">
@@ -235,9 +236,9 @@ export default component$(() => {
             </ul>
           </section>
         </div>
-        <div class=" bg-tp-veryLightGray w-full py-16 xl:flex xl:flex-col xl:items-center ">
+        <div class=" w-full bg-tp-veryLightGray py-16 xl:flex xl:flex-col xl:items-center ">
           <section class="flex max-w-screen-xl flex-col items-center ">
-            <h3 class="text-tp-darkBlue pb-16 text-3xl lg:text-4xl">
+            <h3 class="pb-16 text-3xl text-tp-darkBlue lg:text-4xl">
               Latest Articles
             </h3>
             <ul class="max-w-sm px-4 md:col-start-1 md:row-start-2 md:grid md:max-w-screen-xl md:grid-cols-2 md:gap-8 md:px-4 xl:grid-cols-4 xl:self-center xl:px-0">
@@ -281,45 +282,132 @@ export default component$(() => {
           </section>
         </div>
       </main>
-      <footer class="bg-tp-darkBlue flex justify-center py-10">
+      <footer class="flex justify-center bg-tp-darkBlue py-10 lg:text-lg">
         <div class="flex w-full max-w-screen-xl flex-col items-center gap-8 px-4 md:grid md:grid-cols-3 md:justify-between lg:gap-0 lg:px-10">
           <div class="flex flex-col items-start gap-8 lg:self-start lg:justify-self-start">
             <img class="" src="fe/logo-alt.svg" alt="logo of EasyBank" />
             <ul class=" flex justify-around gap-4">
               <li>
-                <img src="fe/icon-facebook.svg" alt="logo of Facebook" />
+                <img
+                  src="fe/icon-facebook.svg"
+                  class="  lg:hover:cursor-pointer "
+                  alt="logo of Facebook"
+                  id="facebook"
+                  onMouseOver$={() => {
+                    document
+                      .getElementById("facebook")!
+                      .setAttribute("src", "fe/icon-facebook-alt.svg");
+                  }}
+                  onMouseOut$={() => {
+                    document
+                      .getElementById("facebook")!
+                      .setAttribute("src", "fe/icon-facebook.svg");
+                  }}
+                />
               </li>
               <li>
-                <img src="fe/icon-youtube.svg " alt="logo of YouTube" />
+                <img
+                  src="fe/icon-youtube.svg "
+                  class="lg:hover:cursor-pointer lg:hover:fill-red-400"
+                  alt="logo of YouTube"
+                  id="youtube"
+                  onMouseOver$={() => {
+                    document
+                      .getElementById("youtube")!
+                      .setAttribute("src", "fe/icon-youtube-alt.svg");
+                  }}
+                  onMouseOut$={() => {
+                    document
+                      .getElementById("youtube")!
+                      .setAttribute("src", "fe/icon-youtube.svg");
+                  }}
+                />
               </li>
               <li>
-                <img src="fe/icon-twitter.svg " alt="logo of Twitter" />
+                <img
+                  src="fe/icon-twitter.svg "
+                  class="lg:hover:cursor-pointer"
+                  alt="logo of Twitter"
+                  id="twitter"
+                  onMouseOver$={() => {
+                    document
+                      .getElementById("twitter")!
+                      .setAttribute("src", "fe/icon-twitter-alt.svg");
+                  }}
+                  onMouseOut$={() => {
+                    document
+                      .getElementById("twitter")!
+                      .setAttribute("src", "fe/icon-twitter.svg");
+                  }}
+                />
               </li>
               <li>
-                <img src="fe/icon-pinterest.svg " alt="logo of Piterest" />
+                <img
+                  src="fe/icon-pinterest.svg "
+                  class="lg:hover:cursor-pointer lg:hover:fill-red-400"
+                  alt="logo of Piterest"
+                  id="pinterest"
+                  onMouseOver$={() => {
+                    document
+                      .getElementById("pinterest")!
+                      .setAttribute("src", "fe/icon-pinterest-alt.svg");
+                  }}
+                  onMouseOut$={() => {
+                    document
+                      .getElementById("pinterest")!
+                      .setAttribute("src", "fe/icon-pinterest.svg");
+                  }}
+                />
               </li>
               <li>
-                <img src="fe/icon-instagram.svg " alt="logo of Instagram" />
+                <img
+                  src="fe/icon-instagram.svg "
+                  class="lg:hover:cursor-pointer lg:hover:fill-red-400"
+                  alt="logo of Instagram"
+                  id="instagram"
+                  onMouseOver$={() => {
+                    document
+                      .getElementById("instagram")!
+                      .setAttribute("src", "fe/icon-instagram-alt.svg");
+                  }}
+                  onMouseOut$={() => {
+                    document
+                      .getElementById("instagram")!
+                      .setAttribute("src", "fe/icon-instagram.svg");
+                  }}
+                />
               </li>
             </ul>
           </div>
           {/*  lesson learned: dont flex svgs xddd  */}
           <div class=" flex max-w-xs flex-col items-center gap-3 md:flex-row md:justify-between md:pr-10">
-            <ul class="mb-3 flex flex-col items-center gap-2 text-xs text-white">
-              <li>About Us</li>
-              <li>Contact</li>
-              <li>Blog</li>
+            <ul class="mb-3 flex flex-col items-center gap-2 text-xs text-white lg:text-base">
+              <li class="lg:hover:cursor-pointer lg:hover:bg-gradient-to-b lg:hover:from-tp-limeGreen lg:hover:to-tp-brightCyan lg:hover:bg-clip-text lg:hover:text-transparent">
+                About Us
+              </li>
+              <li class="lg:hover:cursor-pointer lg:hover:bg-gradient-to-b lg:hover:from-tp-limeGreen lg:hover:to-tp-brightCyan lg:hover:bg-clip-text lg:hover:text-transparent">
+                Contact
+              </li>
+              <li class="lg:hover:cursor-pointer lg:hover:bg-gradient-to-b lg:hover:from-tp-limeGreen lg:hover:to-tp-brightCyan lg:hover:bg-clip-text lg:hover:text-transparent">
+                Blog
+              </li>
             </ul>
-            <ul class="mb-3 flex flex-col items-center gap-2 text-xs text-white">
-              <li>Careers</li>
-              <li>Support</li>
-              <li>Privacy Policy</li>
+            <ul class="mb-3 flex flex-col items-center gap-2 text-xs text-white lg:text-base">
+              <li class="lg:hover:cursor-pointer lg:hover:bg-gradient-to-b lg:hover:from-tp-limeGreen lg:hover:to-tp-brightCyan lg:hover:bg-clip-text lg:hover:text-transparent">
+                Careers
+              </li>
+              <li class="lg:hover:cursor-pointer lg:hover:bg-gradient-to-b lg:hover:from-tp-limeGreen lg:hover:to-tp-brightCyan lg:hover:bg-clip-text lg:hover:text-transparent">
+                Support
+              </li>
+              <li class="lg:hover:cursor-pointer lg:hover:bg-gradient-to-b lg:hover:from-tp-limeGreen lg:hover:to-tp-brightCyan lg:hover:bg-clip-text lg:hover:text-transparent">
+                Privacy Policy
+              </li>
             </ul>
           </div>
 
           <div class="flex flex-col items-center gap-2 pt-2 lg:justify-self-end">
             <Button text="Request Invite"></Button>
-            <p class="text-tp-grayishBlue mt-3 text-xs">
+            <p class="mt-3 text-xs text-tp-grayishBlue lg:text-sm">
               {" "}
               {" © Easybank. All Rights Reserved "}{" "}
             </p>
