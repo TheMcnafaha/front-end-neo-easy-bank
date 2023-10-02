@@ -43,9 +43,12 @@ export default component$(() => {
                 <li>
                   <a
                     href="#"
-                    class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
+                    class="block rounded py-2 pl-3 pr-4    hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     aria-current="page"
                     onMouseOver$={function show() {
+                      if (window.innerWidth < 767) {
+                        return;
+                      }
                       document.getElementById(
                         "nav_item_home",
                       )!.style.visibility = "visible";
@@ -68,6 +71,9 @@ export default component$(() => {
                     href="#"
                     class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     onMouseOver$={function show() {
+                      if (window.innerWidth < 767) {
+                        return;
+                      }
                       document.getElementById(
                         "nav_item_about",
                       )!.style.visibility = "visible";
@@ -90,6 +96,9 @@ export default component$(() => {
                     href="#"
                     class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     onMouseOver$={function show() {
+                      if (window.innerWidth < 767) {
+                        return;
+                      }
                       document.getElementById(
                         "nav_item_contact",
                       )!.style.visibility = "visible";
@@ -112,6 +121,9 @@ export default component$(() => {
                     href="#"
                     class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     onMouseOver$={function show() {
+                      if (window.innerWidth < 767) {
+                        return;
+                      }
                       document.getElementById(
                         "nav_item_blog",
                       )!.style.visibility = "visible";
@@ -134,6 +146,9 @@ export default component$(() => {
                     href="#"
                     class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     onMouseOver$={function show() {
+                      if (window.innerWidth < 767) {
+                        return;
+                      }
                       document.getElementById(
                         "nav_item_careers",
                       )!.style.visibility = "visible";
