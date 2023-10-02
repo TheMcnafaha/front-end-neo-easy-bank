@@ -31,9 +31,6 @@ export default component$(() => {
             >
               <span class="sr-only">Open main menu</span>
               <img
-                onFocusout$={() => {
-                  console.log("fadsfdsaf");
-                }}
                 src="/fe/icon-hamburger.svg"
                 class="text-xs"
                 alt="menu icon"
@@ -52,13 +49,11 @@ export default component$(() => {
                       document.getElementById(
                         "nav_item_home",
                       )!.style.visibility = "visible";
-                      console.log("lol magic");
                     }}
                     onMouseOut$={function hide() {
                       document.getElementById(
                         "nav_item_home",
                       )!.style.visibility = "hidden";
-                      console.log("lol wizard");
                     }}
                   >
                     Home
@@ -76,13 +71,11 @@ export default component$(() => {
                       document.getElementById(
                         "nav_item_about",
                       )!.style.visibility = "visible";
-                      console.log("lol magic");
                     }}
                     onMouseOut$={function hide() {
                       document.getElementById(
                         "nav_item_about",
                       )!.style.visibility = "hidden";
-                      console.log("lol wizard");
                     }}
                   >
                     About
@@ -100,13 +93,11 @@ export default component$(() => {
                       document.getElementById(
                         "nav_item_contact",
                       )!.style.visibility = "visible";
-                      console.log("lol magic");
                     }}
                     onMouseOut$={function hide() {
                       document.getElementById(
                         "nav_item_contact",
                       )!.style.visibility = "hidden";
-                      console.log("lol wizard");
                     }}
                   >
                     Contact
@@ -124,13 +115,11 @@ export default component$(() => {
                       document.getElementById(
                         "nav_item_blog",
                       )!.style.visibility = "visible";
-                      console.log("lol magic");
                     }}
                     onMouseOut$={function hide() {
                       document.getElementById(
                         "nav_item_blog",
                       )!.style.visibility = "hidden";
-                      console.log("lol wizard");
                     }}
                   >
                     Blog
@@ -148,13 +137,11 @@ export default component$(() => {
                       document.getElementById(
                         "nav_item_careers",
                       )!.style.visibility = "visible";
-                      console.log("lol magic");
                     }}
                     onMouseOut$={function hide() {
                       document.getElementById(
                         "nav_item_careers",
                       )!.style.visibility = "hidden";
-                      console.log("lol wizard");
                     }}
                   >
                     Careers
