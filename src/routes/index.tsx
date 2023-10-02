@@ -31,9 +31,6 @@ export default component$(() => {
             >
               <span class="sr-only">Open main menu</span>
               <img
-                onFocusout$={() => {
-                  console.log("fadsfdsaf");
-                }}
                 src="/fe/icon-hamburger.svg"
                 class="text-xs"
                 alt="menu icon"
@@ -46,19 +43,20 @@ export default component$(() => {
                 <li>
                   <a
                     href="#"
-                    class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
+                    class="block rounded py-2 pl-3 pr-4    hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     aria-current="page"
                     onMouseOver$={function show() {
+                      if (window.innerWidth < 767) {
+                        return;
+                      }
                       document.getElementById(
                         "nav_item_home",
                       )!.style.visibility = "visible";
-                      console.log("lol magic");
                     }}
                     onMouseOut$={function hide() {
                       document.getElementById(
                         "nav_item_home",
                       )!.style.visibility = "hidden";
-                      console.log("lol wizard");
                     }}
                   >
                     Home
@@ -73,16 +71,17 @@ export default component$(() => {
                     href="#"
                     class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     onMouseOver$={function show() {
+                      if (window.innerWidth < 767) {
+                        return;
+                      }
                       document.getElementById(
                         "nav_item_about",
                       )!.style.visibility = "visible";
-                      console.log("lol magic");
                     }}
                     onMouseOut$={function hide() {
                       document.getElementById(
                         "nav_item_about",
                       )!.style.visibility = "hidden";
-                      console.log("lol wizard");
                     }}
                   >
                     About
@@ -97,16 +96,17 @@ export default component$(() => {
                     href="#"
                     class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     onMouseOver$={function show() {
+                      if (window.innerWidth < 767) {
+                        return;
+                      }
                       document.getElementById(
                         "nav_item_contact",
                       )!.style.visibility = "visible";
-                      console.log("lol magic");
                     }}
                     onMouseOut$={function hide() {
                       document.getElementById(
                         "nav_item_contact",
                       )!.style.visibility = "hidden";
-                      console.log("lol wizard");
                     }}
                   >
                     Contact
@@ -121,16 +121,17 @@ export default component$(() => {
                     href="#"
                     class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     onMouseOver$={function show() {
+                      if (window.innerWidth < 767) {
+                        return;
+                      }
                       document.getElementById(
                         "nav_item_blog",
                       )!.style.visibility = "visible";
-                      console.log("lol magic");
                     }}
                     onMouseOut$={function hide() {
                       document.getElementById(
                         "nav_item_blog",
                       )!.style.visibility = "hidden";
-                      console.log("lol wizard");
                     }}
                   >
                     Blog
@@ -145,16 +146,17 @@ export default component$(() => {
                     href="#"
                     class="block rounded py-2 pl-3 pr-4  hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:text-tp-grayishBlue md:hover:bg-transparent md:hover:text-tp-darkBlue "
                     onMouseOver$={function show() {
+                      if (window.innerWidth < 767) {
+                        return;
+                      }
                       document.getElementById(
                         "nav_item_careers",
                       )!.style.visibility = "visible";
-                      console.log("lol magic");
                     }}
                     onMouseOut$={function hide() {
                       document.getElementById(
                         "nav_item_careers",
                       )!.style.visibility = "hidden";
-                      console.log("lol wizard");
                     }}
                   >
                     Careers
@@ -175,7 +177,7 @@ export default component$(() => {
       <main class="md:flex md:flex-col md:items-center ">
         <div class="max-w-screen-xl lg:px-10  lg:pt-8">
           <section class=" relative bottom-20 -z-20 md:z-0  grid  grid-cols-1 justify-items-center md:bottom-0 md:grid-cols-2 md:justify-between md:justify-items-start md:overflow-hidden lg:overflow-visible">
-            <div class="max-w-screen-lg overflow-hidden bg-[url('/fe/bg-intro-mobile.svg')] bg-cover object-left   md:relative md:bottom-[8vw] md:col-start-2 md:row-start-1 md:w-[125%] md:bg-[url('/fe/bg-intro-desktop.svg')] lg:bottom-0 lg:w-full lg:max-w-[640px]  lg:overflow-visible ">
+            <div class="max-w-screen-lg overflow-hidden bg-[url('/fe/bg-intro-mobile.svg')] bg-cover object-left   md:relative md:bottom-[8vw] md:col-start-2 md:row-start-1 md:w-[125%] md:bg-[url('/fe/bg-intro-desktop.svg')] lg:bottom-0 w-full flex flex-col items-center lg:w-full lg:max-w-[640px]  lg:overflow-visible ">
               <div class="relative bottom-[8vw] md:bottom-0 md:pl-[15vw] lg:block lg:pl-32">
                 <PhoneMockup />
               </div>
