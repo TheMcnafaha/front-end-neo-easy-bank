@@ -1,11 +1,12 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Button } from "~/components/Button/button";
 import { Card } from "~/components/card/card";
 import { ListItem } from "~/components/list-item/list-item";
+// import PhoneMockup from "~/media/image-mockups.png?jsx";
+import PhoneMockup from "~/../public/fe/image-mockups.png?jsx";
 
 export default component$(() => {
-  function hover(element: Element) {}
   return (
     <div class="grid grid-cols-1 text-center text-tp-grayishBlue md:text-left">
       {/* master grid */}
@@ -16,7 +17,9 @@ export default component$(() => {
               <img
                 src="/fe/logo.svg"
                 class="mr-3 "
-                alt="Easybank <Lo:w></Lo:w> "
+                alt="Easybank logo "
+                width={139}
+                height={20}
               />
             </a>
             <button
@@ -34,6 +37,8 @@ export default component$(() => {
                 src="/fe/icon-hamburger.svg"
                 class="text-xs"
                 alt="menu icon"
+                width={24}
+                height={24}
               />
             </button>
             <div class="hidden w-full md:block md:w-auto " id="navbar-default">
@@ -171,11 +176,9 @@ export default component$(() => {
         <div class="max-w-screen-xl lg:px-10  lg:pt-8">
           <section class=" relative bottom-20 -z-20 md:z-0  grid  grid-cols-1 justify-items-center md:bottom-0 md:grid-cols-2 md:justify-between md:justify-items-start md:overflow-hidden lg:overflow-visible">
             <div class="max-w-screen-lg overflow-hidden bg-[url('/fe/bg-intro-mobile.svg')] bg-cover object-left   md:relative md:bottom-[8vw] md:col-start-2 md:row-start-1 md:w-[125%] md:bg-[url('/fe/bg-intro-desktop.svg')] lg:bottom-0 lg:w-full lg:max-w-[640px]  lg:overflow-visible ">
-              <img
-                class="relative bottom-[8vw] md:bottom-0 md:pl-[15vw] lg:block lg:pl-32"
-                src="  fe/image-mockups.png "
-                alt=""
-              />
+              <div class="relative bottom-[8vw] md:bottom-0 md:pl-[15vw] lg:block lg:pl-32">
+                <PhoneMockup />
+              </div>
             </div>
             <div class="relative bottom-[8vw]  flex  max-w-sm flex-col items-center py-4 md:bottom-0 md:content-center md:items-start md:justify-center md:px-4 lg:px-0">
               <h1 class=" mb-4  text-4xl text-tp-darkBlue lg:text-5xl">
@@ -285,7 +288,13 @@ export default component$(() => {
       <footer class="flex justify-center bg-tp-darkBlue py-10 lg:text-lg">
         <div class="flex w-full max-w-screen-xl flex-col items-center gap-8 px-4 md:grid md:grid-cols-3 md:justify-between lg:gap-0 lg:px-10">
           <div class="flex flex-col items-start gap-8 lg:self-start lg:justify-self-start">
-            <img class="" src="fe/logo-alt.svg" alt="logo of EasyBank" />
+            <img
+              class=""
+              src="fe/logo-alt.svg"
+              alt="logo of EasyBank"
+              width={139}
+              height={20}
+            />
             <ul class=" flex justify-around gap-4">
               <li>
                 <img
@@ -293,6 +302,8 @@ export default component$(() => {
                   class="  lg:hover:cursor-pointer "
                   alt="logo of Facebook"
                   id="facebook"
+                  width={20}
+                  height={20}
                   onMouseOver$={() => {
                     document
                       .getElementById("facebook")!
@@ -311,6 +322,8 @@ export default component$(() => {
                   class="lg:hover:cursor-pointer lg:hover:fill-red-400"
                   alt="logo of YouTube"
                   id="youtube"
+                  width={20}
+                  height={20}
                   onMouseOver$={() => {
                     document
                       .getElementById("youtube")!
@@ -329,6 +342,8 @@ export default component$(() => {
                   class="lg:hover:cursor-pointer"
                   alt="logo of Twitter"
                   id="twitter"
+                  width={20}
+                  height={20}
                   onMouseOver$={() => {
                     document
                       .getElementById("twitter")!
@@ -347,6 +362,8 @@ export default component$(() => {
                   class="lg:hover:cursor-pointer lg:hover:fill-red-400"
                   alt="logo of Piterest"
                   id="pinterest"
+                  width={20}
+                  height={20}
                   onMouseOver$={() => {
                     document
                       .getElementById("pinterest")!
@@ -365,6 +382,8 @@ export default component$(() => {
                   class="lg:hover:cursor-pointer lg:hover:fill-red-400"
                   alt="logo of Instagram"
                   id="instagram"
+                  width={20}
+                  height={20}
                   onMouseOver$={() => {
                     document
                       .getElementById("instagram")!
