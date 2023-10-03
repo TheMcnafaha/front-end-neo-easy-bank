@@ -38,6 +38,12 @@ Users should be able to:
 
 ## My process
 
+This is the second time I try this Challenge. The first time I tried my usual go to media-query approach were I built the entire website in a mobile media-query; then I build the longer/tablet webiste;
+and last I build the desktop website. However, the CSS used to make the images move around, grow, and crop, required significantly more time to get right. So this time I built "section by section".
+I got the intro part (the one with the img magic) first as mobile, then as tablet, and last as desktop. Ignoring the rest of the site until the intro was 90% of the way there and then moved on to the next
+section and repeating the same steps I took with the previous one. I found this method to be a lot better since it maintained my focus on each section of the website instead of revisiting parts after
+the fact.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -50,29 +56,7 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I learned that the new process I used is cool and that grid is magical.
 
 ### Continued development
 
