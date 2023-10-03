@@ -3,7 +3,6 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { Button } from "~/components/Button/button";
 import { Card } from "~/components/card/card";
 import { ListItem } from "~/components/list-item/list-item";
-// import PhoneMockup from "~/media/image-mockups.png?jsx";
 import PhoneMockup from "~/../public/fe/image-mockups.png?jsx";
 
 export default component$(() => {
@@ -179,7 +178,7 @@ export default component$(() => {
           <section class=" relative bottom-20 -z-20 md:z-0  grid  grid-cols-1 justify-items-center md:bottom-0 md:grid-cols-2 md:justify-between md:justify-items-start md:overflow-hidden lg:overflow-visible">
             <div class="max-w-screen-lg overflow-hidden bg-[url('/fe/bg-intro-mobile.svg')] bg-cover object-left   md:relative md:bottom-[8vw] md:col-start-2 md:row-start-1 md:w-[125%] md:bg-[url('/fe/bg-intro-desktop.svg')] lg:bottom-0 w-full flex flex-col items-center lg:w-full lg:max-w-[640px]  lg:overflow-visible ">
               <div class="relative bottom-[8vw] md:bottom-0 md:pl-[15vw] lg:block lg:pl-32">
-                <PhoneMockup />
+                <PhoneMockup alt="" />
               </div>
             </div>
             <div class="relative bottom-[8vw]  flex  max-w-sm flex-col items-center py-4 md:bottom-0 md:content-center md:items-start md:justify-center md:px-4 lg:px-0">
