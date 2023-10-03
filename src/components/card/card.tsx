@@ -17,12 +17,10 @@ export const Card = component$<CardProps>(
           alt={img_alt}
         />
         <div class="rounded-b-lg bg-white px-4 py-6 text-left md:h-[250px]">
-          <h5 class="mb-4 text-xs font-light text-tp-grayishBlue">
-            By {author}
-          </h5>
-          <h4 class="mb-2 text-lg font-medium text-tp-darkBlue lg:hover:cursor-pointer lg:hover:bg-gradient-to-b lg:hover:from-tp-limeGreen lg:hover:to-tp-brightCyan lg:hover:bg-clip-text lg:hover:text-transparent">
+          <p class="mb-4 text-xs font-light text-tp-grayishBlue">By {author}</p>
+          <h3 class="mb-2 text-lg font-medium text-tp-darkBlue lg:hover:cursor-pointer lg:hover:bg-gradient-to-b lg:hover:from-tp-limeGreen lg:hover:to-tp-brightCyan lg:hover:bg-clip-text lg:hover:text-transparent">
             {title}
-          </h4>
+          </h3>
           <p class="text-sm text-tp-grayishBlue">{intro_text}</p>
         </div>
       </div>
